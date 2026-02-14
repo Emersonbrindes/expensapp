@@ -1,0 +1,9 @@
+{
+  "query": "SELECT * FROM expenses WHERE userId = 150001 AND date BETWEEN '2026-01-07' AND '2026-01-13' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sRqUHF8XN3ZoC5.root --database TxqCX6S8q4gdowFzJxKWVn --execute SELECT * FROM expenses WHERE userId = 150001 AND date BETWEEN '2026-01-07' AND '2026-01-13' LIMIT 10;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 464
+}

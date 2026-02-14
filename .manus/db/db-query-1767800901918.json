@@ -1,0 +1,80 @@
+{
+  "query": "SELECT r.id, r.workWeekId, r.distance, w.weekStartDate, w.weekEndDate \nFROM routes r \nLEFT JOIN workWeeks w ON r.workWeekId = w.id \nORDER BY r.createdAt DESC \nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sRqUHF8XN3ZoC5.root --database TxqCX6S8q4gdowFzJxKWVn --execute SELECT r.id, r.workWeekId, r.distance, w.weekStartDate, w.weekEndDate \nFROM routes r \nLEFT JOIN workWeeks w ON r.workWeekId = w.id \nORDER BY r.createdAt DESC \nLIMIT 10;",
+  "rows": [
+    {
+      "id": "210001",
+      "workWeekId": "1",
+      "distance": "85000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180021",
+      "workWeekId": "1",
+      "distance": "150000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180020",
+      "workWeekId": "1",
+      "distance": "100000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180019",
+      "workWeekId": "1",
+      "distance": "45000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180018",
+      "workWeekId": "1",
+      "distance": "45000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180017",
+      "workWeekId": "1",
+      "distance": "45000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180016",
+      "workWeekId": "1",
+      "distance": "100000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180014",
+      "workWeekId": "1",
+      "distance": "100000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180015",
+      "workWeekId": "1",
+      "distance": "50000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180013",
+      "workWeekId": "1",
+      "distance": "150000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tworkWeekId\tdistance\tweekStartDate\tweekEndDate\n210001\t1\t85000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180021\t1\t150000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180020\t1\t100000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180019\t1\t45000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180018\t1\t45000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180017\t1\t45000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180016\t1\t100000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180014\t1\t100000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180015\t1\t50000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180013\t1\t150000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n",
+  "stderr": "",
+  "execution_time_ms": 402
+}

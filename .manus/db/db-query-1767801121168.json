@@ -1,0 +1,55 @@
+{
+  "query": "SELECT r.id, r.workWeekId, r.origin, r.destination, r.distance, w.weekStartDate, w.weekEndDate \nFROM routes r \nLEFT JOIN workWeeks w ON r.workWeekId = w.id \nORDER BY r.id DESC \nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sRqUHF8XN3ZoC5.root --database TxqCX6S8q4gdowFzJxKWVn --execute SELECT r.id, r.workWeekId, r.origin, r.destination, r.distance, w.weekStartDate, w.weekEndDate \nFROM routes r \nLEFT JOIN workWeeks w ON r.workWeekId = w.id \nORDER BY r.id DESC \nLIMIT 5;",
+  "rows": [
+    {
+      "id": "210002",
+      "workWeekId": "1",
+      "origin": "Uberaba",
+      "destination": "Parauapebas",
+      "distance": "1200",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "210001",
+      "workWeekId": "1",
+      "origin": "Uberaba",
+      "destination": "Parauapebas",
+      "distance": "85000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180021",
+      "workWeekId": "1",
+      "origin": "SINOP",
+      "destination": "BALSAS",
+      "distance": "150000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180020",
+      "workWeekId": "1",
+      "origin": "A",
+      "destination": "B",
+      "distance": "100000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    },
+    {
+      "id": "180019",
+      "workWeekId": "1",
+      "origin": "Uberaba",
+      "destination": "Parauapebas",
+      "distance": "45000",
+      "weekStartDate": "2025-11-17 15:43:42",
+      "weekEndDate": "2025-11-23 15:43:42"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tworkWeekId\torigin\tdestination\tdistance\tweekStartDate\tweekEndDate\n210002\t1\tUberaba\tParauapebas\t1200\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n210001\t1\tUberaba\tParauapebas\t85000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180021\t1\tSINOP\tBALSAS\t150000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180020\t1\tA\tB\t100000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n180019\t1\tUberaba\tParauapebas\t45000\t2025-11-17 15:43:42\t2025-11-23 15:43:42\n",
+  "stderr": "",
+  "execution_time_ms": 387
+}
